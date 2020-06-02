@@ -2,7 +2,7 @@
 
 NexT.boot = {};
 
-NexT.boot.registerEvents = function() {
+NexT.boot.registerEvents = function () {
 
   NexT.utils.registerScrollPercent();
   NexT.utils.registerCanIUseTag();
@@ -16,7 +16,7 @@ NexT.boot.registerEvents = function() {
     if (typeof Velocity === 'function') {
       Velocity(siteNav, animateAction, {
         duration: 200,
-        complete: function() {
+        complete: function () {
           siteNav.classList.toggle('site-nav-on');
         }
       });
@@ -37,20 +37,20 @@ NexT.boot.registerEvents = function() {
       var target = targets[index];
       var currentTarget = targets[1 - index];
       window.anime({
-        targets : currentTarget,
+        targets: currentTarget,
         duration: TAB_ANIMATE_DURATION,
-        easing  : 'linear',
-        opacity : 0,
+        easing: 'linear',
+        opacity: 0,
         complete: () => {
           // Prevent adding TOC to Overview if Overview was selected when close & open sidebar.
           currentTarget.classList.remove(activePanelClassName);
           target.style.opacity = 0;
           target.classList.add(activePanelClassName);
           window.anime({
-            targets : target,
+            targets: target,
             duration: TAB_ANIMATE_DURATION,
-            easing  : 'linear',
-            opacity : 1
+            easing: 'linear',
+            opacity: 1
           });
         }
       });
@@ -73,7 +73,7 @@ NexT.boot.registerEvents = function() {
   });
 };
 
-NexT.boot.refresh = function() {
+NexT.boot.refresh = function () {
 
   /**
    * Register JS handlers by condition option.
@@ -94,7 +94,7 @@ NexT.boot.refresh = function() {
   NexT.utils.registerVideoIframe();
 };
 
-NexT.boot.motion = function() {
+NexT.boot.motion = function () {
   // Define Motion Sequence & Bootstrap Motion.
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
@@ -107,8 +107,27 @@ NexT.boot.motion = function() {
   NexT.utils.updateSidebarPosition();
 };
 
+
+
+// 自定义代码折叠块
+NexT.boot.show_hide = function () {
+  document.querySelectorAll('.fold_hider').forEach((element, index) => {
+    element.addEventListener('click', () => {
+      console.log(element);
+      $('>.fold', element.parentNode).slideToggle();
+      $('>:first', element).toggleClass('open');
+    })
+  })
+
+  //默认情况下折叠
+  document.querySelectorAll("div.fold").forEach((element, index) => {
+    element.style.setProperty("display", "none");
+  })
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   NexT.boot.registerEvents();
   NexT.boot.refresh();
   NexT.boot.motion();
+  NexT.boot.show_hide();
 });
