@@ -19,16 +19,18 @@
     var CONFIG = {"hostname":"hellowsun","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="sort对struct排序12345678910111213struct node&amp;#123;	int num;&amp;#125;;bool cmp(node x, node y)&amp;#123;	return x.num &gt; y.num; &#x2F;&#x2F; 根据 num 降序	&#x2F;&#x2F;return x.num &lt; y.num; &#x2F;&#x2F; 根据 num 升序&amp;#125;int main()&amp;#123;	node*">
+  <meta name="description" content="写在前面最近在准备PAT考试，大一大二学的c&#x2F;c++太久不用有些生疏，通过本文对生疏的知识点加以记录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sort排序">
+<meta property="og:title" content="PAT之旅">
 <meta property="og:url" content="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="Wsun">
-<meta property="og:description" content="sort对struct排序12345678910111213struct node&amp;#123;	int num;&amp;#125;;bool cmp(node x, node y)&amp;#123;	return x.num &gt; y.num; &#x2F;&#x2F; 根据 num 降序	&#x2F;&#x2F;return x.num &lt; y.num; &#x2F;&#x2F; 根据 num 升序&amp;#125;int main()&amp;#123;	node*">
+<meta property="og:description" content="写在前面最近在准备PAT考试，大一大二学的c&#x2F;c++太久不用有些生疏，通过本文对生疏的知识点加以记录">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-03T14:43:41.000Z">
-<meta property="article:modified_time" content="2020-06-03T14:50:38.726Z">
+<meta property="article:modified_time" content="2020-06-03T14:57:34.335Z">
 <meta property="article:author" content="Wsun">
+<meta property="article:tag" content="研途">
+<meta property="article:tag" content="PAT">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/">
@@ -44,7 +46,7 @@
   };
 </script>
 
-  <title>sort排序 | Wsun</title>
+  <title>PAT之旅 | Wsun</title>
   
 
 
@@ -180,7 +182,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          sort排序
+          PAT之旅
         </h1>
 
         <div class="post-meta">
@@ -191,7 +193,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-06-03 22:43:41 / Modified: 22:50:38" itemprop="dateCreated datePublished" datetime="2020-06-03T22:43:41+08:00">2020-06-03</time>
+              <time title="Created: 2020-06-03 22:43:41 / Modified: 22:57:34" itemprop="dateCreated datePublished" datetime="2020-06-03T22:43:41+08:00">2020-06-03</time>
             </span>
 
           
@@ -212,7 +214,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="sort对struct排序"><a href="#sort对struct排序" class="headerlink" title="sort对struct排序"></a>sort对struct排序</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node x, node y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x.num &gt; y.num; <span class="comment">// 根据 num 降序</span></span><br><span class="line">	<span class="comment">//return x.num &lt; y.num; // 根据 num 升序</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	node* n = <span class="keyword">new</span> node[<span class="number">10</span>];</span><br><span class="line">	sort(n, n+<span class="number">10</span>, cmp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>最近在准备PAT考试，大一大二学的c/c++太久不用有些生疏，通过本文对生疏的知识点加以记录</p>
+<a id="more"></a>
+
+<h1 id="sort对struct排序"><a href="#sort对struct排序" class="headerlink" title="sort对struct排序"></a>sort对struct排序</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node x, node y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x.num &gt; y.num; <span class="comment">// 根据 num 降序</span></span><br><span class="line">	<span class="comment">//return x.num &lt; y.num; // 根据 num 升序</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	node* n = <span class="keyword">new</span> node[<span class="number">10</span>];</span><br><span class="line">	sort(n, n+<span class="number">10</span>, cmp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -248,7 +253,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/" title="sort排序">http://hellowsun/2020/06/03/sort排序/</a>
+    <a href="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/" title="PAT之旅">http://hellowsun/2020/06/03/sort排序/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -258,6 +263,11 @@
 
 
       <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E7%A0%94%E9%80%94/" rel="tag"><i class="fa fa-tag"></i> 研途</a>
+              <a href="/tags/PAT/" rel="tag"><i class="fa fa-tag"></i> PAT</a>
+          </div>
 
         
 
@@ -328,7 +338,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#sort对struct排序"><span class="nav-text">sort对struct排序</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sort对struct排序"><span class="nav-text">sort对struct排序</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -357,7 +367,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
