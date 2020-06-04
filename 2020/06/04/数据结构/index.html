@@ -19,21 +19,24 @@
     var CONFIG = {"hostname":"hellowsun","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="写在前面最近在准备PAT考试，大一大二学的c&#x2F;c++太久不用有些生疏，通过本文对生疏的知识点加以记录">
+  <meta name="description" content="写在前面">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PAT之旅">
-<meta property="og:url" content="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/index.html">
+<meta property="og:title" content="数据结构">
+<meta property="og:url" content="http://hellowsun/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Wsun">
-<meta property="og:description" content="写在前面最近在准备PAT考试，大一大二学的c&#x2F;c++太久不用有些生疏，通过本文对生疏的知识点加以记录">
+<meta property="og:description" content="写在前面">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-03T14:43:41.000Z">
-<meta property="article:modified_time" content="2020-06-04T02:42:56.917Z">
+<meta property="og:image" content="http://hellowsun/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.png">
+<meta property="og:image" content="http://hellowsun/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%AE%97%E6%B3%95%E6%A6%82%E5%BF%B5.png">
+<meta property="article:published_time" content="2020-06-04T07:52:35.000Z">
+<meta property="article:modified_time" content="2020-06-04T10:36:12.762Z">
 <meta property="article:author" content="Wsun">
-<meta property="article:tag" content="PAT">
 <meta property="article:tag" content="研途">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://hellowsun/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.png">
 
-<link rel="canonical" href="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/">
+<link rel="canonical" href="http://hellowsun/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
 
 
 <script id="page-configurations">
@@ -46,7 +49,7 @@
   };
 </script>
 
-  <title>PAT之旅 | Wsun</title>
+  <title>数据结构 | Wsun</title>
   
 
 
@@ -169,7 +172,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/">
+    <link itemprop="mainEntityOfPage" href="http://hellowsun/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -182,7 +185,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          PAT之旅
+          数据结构
         </h1>
 
         <div class="post-meta">
@@ -191,16 +194,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-06-03 22:43:41" itemprop="dateCreated datePublished" datetime="2020-06-03T22:43:41+08:00">2020-06-03</time>
+              <time title="Created: 2020-06-04 15:52:35 / Modified: 18:36:12" itemprop="dateCreated datePublished" datetime="2020-06-04T15:52:35+08:00">2020-06-04</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-04 10:42:56" itemprop="dateModified" datetime="2020-06-04T10:42:56+08:00">2020-06-04</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -229,10 +226,61 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>最近在准备PAT考试，大一大二学的c/c++太久不用有些生疏，通过本文对生疏的知识点加以记录</p>
-<a id="more"></a>
+        <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><a id="more"></a>
 
-<h1 id="sort对struct排序"><a href="#sort对struct排序" class="headerlink" title="sort对struct排序"></a>sort对struct排序</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node x, node y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x.num &gt; y.num; <span class="comment">// 根据 num 降序</span></span><br><span class="line">	<span class="comment">//return x.num &lt; y.num; // 根据 num 升序</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	node* n = <span class="keyword">new</span> node[<span class="number">10</span>];</span><br><span class="line">	sort(n, n+<span class="number">10</span>, cmp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="数据结构基本概念"><a href="#数据结构基本概念" class="headerlink" title="数据结构基本概念"></a>数据结构基本概念</h2><p><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.png" alt="数据结构"></p>
+<ul>
+<li>顺序存储</li>
+<li>链式存储</li>
+<li>索引存储</li>
+<li>散列存储</li>
+</ul>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p><img src="%E7%AE%97%E6%B3%95%E6%A6%82%E5%BF%B5.png" alt="算法概念"></p>
+<h3 id="复杂度计算"><a href="#复杂度计算" class="headerlink" title="复杂度计算"></a>复杂度计算</h3><ul>
+<li><p>常对幂指阶<br>$O(1) &lt; O(log_2^n) &lt; O(n) &lt; O(n^2) &lt; O(n^3) &lt; O(2^n) &lt; O(n!) &lt; O(n^n) $</p>
+</li>
+<li><p>加法规则<br>$ O(f(n)) + O(g(n)) = O(max(f(n), g(n))) $</p>
+</li>
+<li><p>乘法规则<br>$ O(f(n)) \times O(g(n)) = O((f(n) \times g(n))) $</p>
+</li>
+</ul>
+<h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul>
+<li><p>计算</p>
+<ol>
+<li>找到一个基本操作（最深层循环）</li>
+<li>分析该基本操作的执行次数 x 与问题规模 n 的关系 n=f(x)</li>
+<li>x 的数量级 O(x) 就是算法时间复杂度 T(n)<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">time</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i &lt;= n) &#123; <span class="comment">// 外层循环执行 n 次</span></span><br><span class="line">		i++;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"counti:"</span> &lt;&lt; i; </span><br><span class="line">		fot(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=n; j++) &#123; <span class="comment">// 内层循环执行 n^2 次</span></span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; <span class="string">"countj:"</span> &lt;&lt; j;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"ok"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+$ T(n) = O(n) + O(n^2) = O(n^2) $</li>
+</ol>
+</li>
+<li><p>结论</p>
+<ol>
+<li>顺序执行的代码只会影响常数项，可忽略</li>
+<li>只需挑选循环中的<code>一个基本操作</code>分析它执行次数与 n 的关系</li>
+<li>如果有多层嵌套循环，只关注最深层循环次数</li>
+</ol>
+</li>
+</ul>
+<h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><ul>
+<li>普通程序计算<ol>
+<li>找到所占空间大小与问题规模的变量</li>
+<li>分析所占空间 x 与问题规模 n 的关系 x=f(n)</li>
+<li>x 的数量级 O(x) 就是算法空间复杂度 S(n)<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">putong</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> flag[n][n];</span><br><span class="line">	<span class="keyword">int</span> other[n];</span><br><span class="line">	<span class="keyword">int</span> i;</span><br><span class="line">	<span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="comment">// flag 开销</span></span><br><span class="line">	<span class="comment">// other 开销</span></span><br><span class="line">	<span class="comment">// 程序代码 开销</span></span><br><span class="line">	putong(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+$ S(n) = O(n^2) + O(n) + O(1) = O(n^2) $</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>递归程序计算</p>
+<ol>
+<li>找到递归调用的深度 x 与问题规模 n 的关系 x=f(n)</li>
+<li>x 的数量级 O(x) 就是算法空间复杂度 S(n) ( digui_2 中因函数中的定义存在额外开销 )<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">digui_1</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123; </span><br><span class="line">	<span class="keyword">int</span> a, b, c;</span><br><span class="line">	<span class="comment">// ...</span></span><br><span class="line">	<span class="keyword">if</span>(n &gt; <span class="number">1</span>)&#123;</span><br><span class="line">		digui_1(n - <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"count"</span> &lt;&lt; n;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">digui_2</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> flag[n];</span><br><span class="line">	<span class="comment">// ...</span></span><br><span class="line">	<span class="keyword">if</span>(n &gt; <span class="number">1</span>)&#123;</span><br><span class="line">		digui_2(n - <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"count"</span> &lt;&lt; n;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 空间复杂度 = 递归调用的深度</span></span><br><span class="line">	digui_1(<span class="number">5</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 空间复杂度 = 1 + 2 + 3 + ... + n</span></span><br><span class="line">	<span class="comment">// 声明数组带来的额外空间开销</span></span><br><span class="line">	digui_2(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+$递归1: S(n) = O(n) $<br>$递归2: S(n) = O(n^2) $</li>
+</ol>
+</li>
+<li><p>原地工作<br>算法所需内存空间为常量 O(1)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">space</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span> &lt;= n) &#123;</span><br><span class="line">		i++;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"ok"</span> &lt;&lt; i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"still  ok"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 
     </div>
 
@@ -268,7 +316,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://hellowsun/2020/06/03/sort%E6%8E%92%E5%BA%8F/" title="PAT之旅">http://hellowsun/2020/06/03/sort排序/</a>
+    <a href="http://hellowsun/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="数据结构">http://hellowsun/2020/06/04/数据结构/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -280,8 +328,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/PAT/" rel="tag"><i class="fa fa-tag"></i> PAT</a>
               <a href="/tags/%E7%A0%94%E9%80%94/" rel="tag"><i class="fa fa-tag"></i> 研途</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"><i class="fa fa-tag"></i> 数据结构</a>
           </div>
 
         
@@ -290,13 +338,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/01/Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E4%B9%8B%E6%97%85-2/" rel="prev" title="Hexo个性化之旅（2）——NexT主题进阶配置">
-      <i class="fa fa-chevron-left"></i> Hexo个性化之旅（2）——NexT主题进阶配置
+    <a href="/2020/06/03/sort%E6%8E%92%E5%BA%8F/" rel="prev" title="PAT之旅">
+      <i class="fa fa-chevron-left"></i> PAT之旅
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="next" title="数据结构">
-      数据结构 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -356,7 +401,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sort对struct排序"><span class="nav-text">sort对struct排序</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绪论"><span class="nav-text">绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据结构基本概念"><span class="nav-text">数据结构基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法"><span class="nav-text">算法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -504,6 +549,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
@@ -518,7 +616,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'gitalk',
       owner       : 'helloWsy',
       admin       : ['helloWsy'],
-      id          : '89d376f5e07a3c336e1a6b309c872ba7',
+      id          : '28dc5dbcab908cd3501ee98ce95f03d7',
         language: 'en',
       distractionFreeMode: true
     });
