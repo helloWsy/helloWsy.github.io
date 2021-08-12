@@ -164,6 +164,242 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://hellowsun.cn/2021/03/29/CSS3%E2%80%94%E2%80%94%E9%80%89%E6%8B%A9%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Wsun">
+      <meta itemprop="description" content="不想做全栈的后端不是一个好前端">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wsun">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/29/CSS3%E2%80%94%E2%80%94%E9%80%89%E6%8B%A9%E5%99%A8/" class="post-title-link" itemprop="url">CSS3——选择器</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-03-29 10:01:16" itemprop="dateCreated datePublished" datetime="2021-03-29T10:01:16+08:00">2021-03-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-04-12 11:11:49" itemprop="dateModified" datetime="2021-04-12T11:11:49+08:00">2021-04-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h1><h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><h3 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">	<span class="comment">/* 页面上的所有元素会被选中 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">	<span class="comment">/* 元素选择器直接使用元素进行选择 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#demo</span> &#123;</span><br><span class="line">	<span class="comment">/* id选择器以 # 开头 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.color</span> &#123;</span><br><span class="line">	<span class="comment">/* 类选择器以 . 开头 */</span></span><br><span class="line">	<span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.color</span> &#123;</span><br><span class="line">	<span class="comment">/* 只有p元素下的color会被选中 */</span></span><br><span class="line">	<span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Attribute_selectors" target="_blank" rel="noopener">查看更多属性选择器的详细文档</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[attr]</span> &#123;</span><br><span class="line">	<span class="comment">/* 匹配存在 attr 属性的 div 元素 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[attr=value]</span> &#123;</span><br><span class="line">	<span class="comment">/* 匹配存在 attr 属性的 div 元素, 并且属性值为 value */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[attr~=value]</span> &#123;</span><br><span class="line">	<span class="comment">/* 匹配存在 attr 属性的 div 元素, 并且该属性是一个以空格作为分隔的值列表, 其中至少有一个值为 value */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[attr|=value]</span> &#123;</span><br><span class="line">	<span class="comment">/* 匹配存在 attr 属性的 div元素, 且属性值为 vlaue 或以 value- 开头 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[attr^=value]</span> &#123;</span><br><span class="line">	<span class="comment">/* 匹配存在 attr 属性的 div 元素, 且属性值以 vlaue 开头 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[attr$=value]</span> &#123;</span><br><span class="line">	<span class="comment">/* 匹配存在 attr 属性的 div 元素, 且属性值以 value 结尾 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[attr*=value]</span> &#123;</span><br><span class="line">	<span class="comment">/* 匹配存在 attr 属性的 div 元素, 且属性值包含至少一个 value 值*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>&#123;</span><br><span class="line">	<span class="comment">/* 通过逗号 (,) 分隔每个选择器 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="组合器"><a href="#组合器" class="headerlink" title="组合器"></a>组合器</h2><h3 id="后代组合器"><a href="#后代组合器" class="headerlink" title="后代组合器"></a>后代组合器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">div p &#123;</span><br><span class="line"><span class="css">	<span class="comment">/* 匹配 div 元素下的所有 p 元素 */</span></span></span><br><span class="line">	background-color: pink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	这是一个div</span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; span &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<style>
+.hdzhq-div{
+    background-color: gray;
+    height: auto;
+    color: white;
+}
+.hdzhq-div p{
+    background-color: pink;
+}
+</style>
+<div class="hdzhq-div">
+这是一个div
+    <p>div > p</p>
+    <span><p>div > span > p</p></span>
+    <p>div > p</p>
+</div>
+
+<h3 id="直接子代组合器"><a href="#直接子代组合器" class="headerlink" title="直接子代组合器"></a>直接子代组合器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">div &gt; p &#123;</span><br><span class="line"><span class="css">	<span class="comment">/* 匹配 div 元素下的直接子代 p 元素 */</span></span></span><br><span class="line">	background-color: pink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	这是一个div</span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; span &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<style>
+.zjzdzhq-div{
+    background-color: gray;
+    height: auto;
+    color: white;
+}
+.zjzdzhq-div > p{
+    background-color: pink;
+}
+</style>
+<div class="zjzdzhq-div">
+这是一个div
+    <p>div > p</p>
+    <span><p>div > span > p</p></span>
+    <p>div > p</p>
+</div>
+
+<h3 id="一般兄弟组合器"><a href="#一般兄弟组合器" class="headerlink" title="一般兄弟组合器"></a>一般兄弟组合器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">span ~ p &#123;</span><br><span class="line"><span class="css">	<span class="comment">/* 匹配 span 元素后的所有同级 p 元素 */</span></span></span><br><span class="line">	background-color: pink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	这是一个div</span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; span &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<style>
+.ybxdzhq-div{
+    background-color: gray;
+    height: auto;
+    color: white;
+}
+.ybxdzhq-span ~ p{
+    background-color: pink;
+}
+</style>
+<div class="ybxdzhq-div">
+这是一个div
+    <p>div > p</p>
+    <span class="ybxdzhq-span"><p>div > span > p</p></span>
+    <p>div > p</p>
+    <div><p>div > div > p</p></div>
+    <p>div > p</p>
+</div>
+
+<h3 id="紧密兄弟组合器"><a href="#紧密兄弟组合器" class="headerlink" title="紧密兄弟组合器"></a>紧密兄弟组合器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">span + p &#123;</span><br><span class="line"><span class="css">	<span class="comment">/* 匹配 span 元素后的最近同级 p 元素 */</span></span></span><br><span class="line">	background-color: pink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	这是一个div</span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; span &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>div &gt; p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<style>
+.jmxdzhq-div{
+    background-color: gray;
+    height: auto;
+    color: white;
+}
+.jmxdzhq-span + p{
+    background-color: pink;
+}
+</style>
+<div class="jmxdzhq-div">
+这是一个div
+    <p>div > p</p>
+    <span class="jmxdzhq-span"><p>div > span > p</p></span>
+    <p>div > p</p>
+    <div><p>div > div > p</p></div>
+    <p>div > p</p>
+</div>
+
+<h2 id="伪选择器"><a href="#伪选择器" class="headerlink" title="伪选择器"></a>伪选择器</h2><h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><h4 id="状态伪类"><a href="#状态伪类" class="headerlink" title="状态伪类"></a>状态伪类</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 状态伪类的定义需按照 :link :visited :hover :active 的顺序定义 */</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span><br><span class="line">	<span class="comment">/* 表示链接正常的状态 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span><br><span class="line">	<span class="comment">/* 表示点击过的链接 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="comment">/* 表示指针悬停的链接 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">	<span class="comment">/* 表示被激活的链接 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">	<span class="comment">/* 表示获取焦点的链接 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="结构化伪类"><a href="#结构化伪类" class="headerlink" title="结构化伪类"></a>结构化伪类</h4><h5 id="first-child"><a href="#first-child" class="headerlink" title=":first-child"></a>:first-child</h5><p>选择父元素的第一个子元素</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span> &#123;</span></span><br><span class="line"><span class="css">	<span class="comment">/* 选中第一个子元素 */</span></span></span><br><span class="line">	color: pink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-tag">p</span><span class="selector-pseudo">:first-child</span> &#123;</span></span><br><span class="line"><span class="css">	<span class="comment">/* 当子元素前有其他类型的元素，将无法选中 */</span></span></span><br><span class="line">	color: pink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>第1个子元素-li<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>第2个子元素-p（不起作用）<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>第2个子元素-li<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>第3个子元素-li<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<style>
+.jghwl-1{
+    background-color: gray;
+    height: auto;
+    color: white;
+}
+.jghwl-1 li:first-child {
+    /* 选中第一个子元素li */
+    color: pink;
+}
+.jghwl-1 p:first-child {
+    color: pink;
+}
+</style>
+<ul class="jghwl-1">
+    <li>第1个子元素-li</li>
+    <p>第2个子元素-p（不起作用）</p>
+    <li>第3个子元素-li</li>
+    <li>第4个子元素-li</li>
+</ul>
+
+
+<h5 id="first-of-type"><a href="#first-of-type" class="headerlink" title=":first-of-type"></a>:first-of-type</h5><p>选择父元素内任意类型子元素的第一个元素</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">ul</span><span class="selector-pseudo">:first-of-type</span> &#123;</span></span><br><span class="line"><span class="css">	<span class="comment">/* 选中第一个任意类型子元素 */</span></span></span><br><span class="line">	color: pink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>第1个子元素-li<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>第2个子元素-p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>第2个子元素-li<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>第3个子元素-li<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<style>
+.jghwl-2{
+    background-color: gray;
+    height: auto;
+    color: white;
+}
+.jghwl-2:first-of-type {
+    /* 选中第一个子元素li */
+    color: pink;
+}
+</style>
+<ul class="jghwl-2">
+    <li>第1个子元素-li</li>
+    <p>第2个子元素-p</p>
+    <li>第3个子元素-li</li>
+    <li>第4个子元素-li</li>
+</ul>
+
+
+<h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><pre><code class="css"></code></pre>
+<h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>选择器权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>继承 / *</td>
+<td>0，0，0，0</td>
+</tr>
+<tr>
+<td>元素选择器 / 伪元素选择器</td>
+<td>0，0，0，1</td>
+</tr>
+<tr>
+<td>类选择器 / 伪类选择器 / 属性选择器</td>
+<td>0，0，1，0</td>
+</tr>
+<tr>
+<td>id选择器</td>
+<td>0，1，0，0</td>
+</tr>
+<tr>
+<td>行内样式 style=””</td>
+<td>1，0，0，0</td>
+</tr>
+<tr>
+<td>!important</td>
+<td>∞无穷大</td>
+</tr>
+</tbody></table>
+<p>复合权重可以叠加（不会进位）</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://hellowsun.cn/2021/03/25/CSS3%E2%80%94%E2%80%94Flexbox%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -236,7 +472,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://hellowsun.cn/2021/03/23/caculator/">
+    <link itemprop="mainEntityOfPage" href="http://hellowsun.cn/2021/03/23/calculator/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -250,7 +486,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/03/23/caculator/" class="post-title-link" itemprop="url">caculator</a>
+            <a href="/2021/03/23/calculator/" class="post-title-link" itemprop="url">calculator</a>
         </h2>
 
         <div class="post-meta">
@@ -267,7 +503,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-24 10:20:20" itemprop="dateModified" datetime="2021-03-24T10:20:20+08:00">2021-03-24</time>
+                <time title="Modified: 2021-04-15 11:10:35" itemprop="dateModified" datetime="2021-04-15T11:10:35+08:00">2021-04-15</time>
               </span>
 
           
@@ -616,81 +852,6 @@ function getRadioValue(type){
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://hellowsun.cn/2021/02/28/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Wsun">
-      <meta itemprop="description" content="不想做全栈的后端不是一个好前端">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wsun">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/28/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" class="post-title-link" itemprop="url">前端面试</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-02-28 10:00:21" itemprop="dateCreated datePublished" datetime="2021-02-28T10:00:21+08:00">2021-02-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-26 09:45:23" itemprop="dateModified" datetime="2021-03-26T09:45:23+08:00">2021-03-26</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h1><h2 id="盒子模型-box-modal"><a href="#盒子模型-box-modal" class="headerlink" title="盒子模型 box-modal"></a>盒子模型 box-modal</h2><p><img src="box-modal.png" alt="" title="盒子模型"></p>
-<h3 id="标准盒模型和IE盒模型"><a href="#标准盒模型和IE盒模型" class="headerlink" title="标准盒模型和IE盒模型"></a>标准盒模型和IE盒模型</h3><blockquote>
-<p><strong>标准盒模型（content）</strong><br>width = content.width<br>height = content.height</p>
-</blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/28/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -762,7 +923,7 @@ function getRadioValue(type){
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -775,7 +936,7 @@ function getRadioValue(type){
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
